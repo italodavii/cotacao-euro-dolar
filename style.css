@@ -1,0 +1,71 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+}
+
+section{
+    background-color: #141414;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section h1{
+    font-size: 3em;
+    position: relative;
+    top: -3em;
+    width: 85%;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    background-color: #242424;
+    width: 500px;
+    height: auto;
+    margin: 20px;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.card > *{
+    margin: 0.6em 0;
+}
+
+.card h3{
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.card h3 img{
+    width: 1em;
+    height: 1em;
+    border-radius: 1em;
+    margin-right: 0.4em;
+}
+
+.card span{
+    font-size: 1.4em;
+}
+
+.card h2{
+    font-size: 2em;
+}
+
