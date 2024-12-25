@@ -1,5 +1,4 @@
-
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -9,63 +8,116 @@
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
 }
 
-section{
+
+section {
     background-color: #141414;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-section h1{
-    font-size: 3em;
-    position: relative;
-    top: -3em;
-    width: 85%;
-    text-align: center;
-}
-
-main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.card{
-    background-color: #242424;
-    width: 500px;
-    height: auto;
-    margin: 20px;
-    border-radius: 1em;
     padding: 1em;
 }
 
-.card > *{
+section h1 {
+    font-size: 2.5em;
+    width: 85%;
+    text-align: center;
+    margin: 1em 0;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+
+.card {
+    background-color: #242424;
+    width: 450px;
+    max-width: 90%;
+    margin: 10px;
+    border-radius: 1em;
+    padding: 1.7em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card > * {
     margin: 0.6em 0;
 }
 
-.card h3{
-    font-size: 2em;
+.card h3 {
+    font-size: 1.8em;
     display: flex;
-    align-items: center;
     margin-top: 0;
 }
 
-.card h3 img{
-    width: 1em;
-    height: 1em;
-    border-radius: 1em;
-    margin-right: 0.4em;
+.card h3 img {
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 50%;
+    margin-right: 0.5em;
 }
 
-.card span{
-    font-size: 1.4em;
+.card span {
+    font-size: 1.2em;
 }
 
-.card h2{
+.card h2 {
     font-size: 2em;
+    font-weight: bold;
 }
 
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    section h1 {
+        font-size: 2em;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .card h3 {
+        font-size: 1.5em;
+    }
+
+    .card span {
+        font-size: 1em;
+    }
+
+    .card h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section h1 {
+        font-size: 1.8em;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .card h3 {
+        font-size: 1.2em;
+    }
+
+    .card span {
+        font-size: 0.9em;
+    }
+
+    .card h2 {
+        font-size: 1.5em;
+    }
+}
